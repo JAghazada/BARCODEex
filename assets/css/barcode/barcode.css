@@ -1,0 +1,19 @@
+#barcode-page{
+    max-width: 210mm;
+    background-color:#fff;
+    color:fff;
+/*    margin: 10px auto;*/
+    padding:5mm;
+    display:flex;
+    
+}
+.col{
+    background: red;
+}
+.barcode {
+    width:38.1mm;
+    height:21.2mm;
+    background-color:#ddd;
+    border:1px solid #000;
+    padding:0;
+}

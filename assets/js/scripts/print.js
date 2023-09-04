@@ -1,0 +1,5 @@
+
+
+function printDocument() {
+  print()
+}

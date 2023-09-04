@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barkod Əldə et</title>
+    <link rel="stylesheet" href="./assets/css/_base.css">
+    <link rel="stylesheet" href="./assets/css/barcode/button.css">
+       <link rel="stylesheet" type="text/css" href="./assets/css/barcode/print.css" media="print">
+
+    <link rel="stylesheet" href="./assets/css/barcode/page.css">
+    <link rel="stylesheet" href="./assets/css/barcode/barcode-settings.css">
+    <link rel="stylesheet" href="./assets/css/barcode/barcode.css">
+
+</head>
+<body>
+<button class="btn print" onclick="printDocument()">Print</button>
+<main id="page-main">
+    <section id="barcode-page">
+        <div class="col-1">
+
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-4">
+
+        </div>
+        <div class="col-5">
+
+        </div>
+    </section>
+    <section class="section-right">
+        <div class="barcode-settings-panel">
+            <div class="line">
+                <span>A4 qiragindan olan olculer</span><br>
+                <input type="number" id="a4-vol" max="10" value="5" min="0"> <span id="a4-val"> mm</span>
+            </div>
+            <div class="line">
+                <span>BARKODUN olculeri :</span><br>
+                <span>Uzunuluq: </span> <input type="number" id="height-vol" value="21.2" max="100" min="0"> <span
+                id="a4-val"> mm</span><br>
+                <span>En: </span> <input type="number" value="38.1" id="width-vol" max="100" min="0"> <span id="a4-val"> mm</span>
+                <br> <br>
+                <span>Barkodun diger barkodlardan (sag sol yuxari asagi mesafesi:)</span> <input type="number" value="0"
+                                                                                                 id="margin-vol"
+                                                                                                 max="100" min="0"> mm
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/barcodes/JsBarcode.code128.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.2.2/html2canvas.min.js"></script>
+
+<script src="./assets/js/scripts/barcode.js"></script>
+<script src="./assets/js/scripts/barcode-range-listeners.js"></script>
+<script src="./assets/js/scripts/print.js"></script>
+
+</body>
+</html>

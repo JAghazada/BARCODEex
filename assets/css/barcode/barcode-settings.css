@@ -1,0 +1,19 @@
+.section-right{
+    height:100%;
+    width: 300px;
+    background-color:#eee;
+    position:absolute;
+    right:0 ;
+    padding:1rem;
+    font-weight:bold;
+    
+}
+.line{
+    width: 100%;
+}
+input[type=number]{
+    height:30px;
+    font-weight:bold;
+    font-size:1.1rem;
+    
+}
